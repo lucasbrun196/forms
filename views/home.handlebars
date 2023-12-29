@@ -1,0 +1,14 @@
+<h1>Lista De Postagens</h1>
+
+<!--
+para cada postagem
+sera exibido o titulo e o conteudo
+-->
+
+{{#each posts}}
+    <small>{{createdAt}}</small>
+    <h1>{{titulo}}</h2>
+    <p>{{conteudo}}</p>
+    <a href="/deletar/{{id}}"><button>Deletar</button></a>
+    <hr>
+{{/each}}
